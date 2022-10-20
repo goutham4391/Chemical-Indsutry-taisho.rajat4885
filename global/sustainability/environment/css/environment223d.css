@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+.box-border-gray {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+.table-border-left {border-left: 1px solid #ddd !important;}
+.table-border-right {border-right: 1px solid #ddd !important;}
+
+/* テーブル改行 200406 ----------------------- */
+.sp-table-scroll {
+	white-space: normal;
+}
+#environmentTop .box-clm3 li a span {
+	text-align: center;
+}
+
+
+/* #環境活動の方針
+----------------------- */
+.list-num2dig li {
+	margin-bottom: 20px;
+}
+/* #環境リスクマネジメント
+----------------------- */
+.management .list-dot {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.txt-caution {
+	font-size: 14px;
+}
+/* #環境行動目標と実績
+----------------------- */
+.targets_results .table-default:last-of-type {
+	margin-bottom: 20px;
+}
+/*.targets_results .table-default:nth-of-type(n+2) thead {
+	display: none;
+}*/
+.targets_results .table-default caption {
+	display: none;
+}
+.targets_results .table-default{
+	width: 100%;
+	table-layout: fixed !important;
+}
+
+/* 1列目 */
+.targets_results .table-default tr th:nth-child(1),
+.targets_results .table-default tr td:nth-child(1){
+	width: 20% !important; 
+}
+
+/* 4列目 */
+.targets_results .table-default tr th:nth-child(4){
+	width: 25% !important;
+	word-break: break-all;
+}
+.targets_results .table-default tr td:nth-child(4),
+.targets_results .table-default tr.lastTR td:nth-child(3){
+	/* width: 10% !important; */
+}
+
+/* 2・3・5列目 */
+.targets_results .table-default tr th:nth-child(2),
+.targets_results .table-default tr th:nth-child(3),
+.targets_results .table-default tr th:nth-child(5),
+.targets_results .table-default tr td:nth-child(2),
+.targets_results .table-default tr td:nth-child(3),
+.targets_results .table-default tr td:nth-child(5),
+.targets_results .table-default tr.lastTR td:nth-child(1),
+.targets_results .table-default tr.lastTR td:nth-child(4){
+	width: 25%;
+}
+.targets_results .table-default tr:nth-child(even) th, .targets_results .table-default tr:nth-child(even) td{
+	background:none;
+}
+
+/* 2つ目以降のtableのth消す ここから */
+.targets_results .table-default:nth-of-type(n+2){
+	border-top: none;
+}
+.targets_results .table-default:nth-of-type(n+2) thead tr th{
+	padding-top: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+.targets_results .table-default:nth-of-type(n+2) thead tr th span{
+	display: none;
+}
+
+.sp-ttl,
+.display-none,
+.sp-visible {
+	display: none;
+}
+.targets_results .dl-default {
+	margin-bottom: 20px;
+}
+.targets_results .bg-gray {
+    background-color: #f8f8f8;
+}
+
+/* #地球温暖化防止
+----------------------- */
+.table-caption-ttl {
+	font-weight: bold;
+	text-align: left;
+	margin-top: 20px;
+}
+.box-clm2 .table-caption-ttl {
+	margin-top: 0;
+}
+/* #環境
+----------------------- */
+#contents .ttl-normal {
+	margin: inherit;
+	padding: inherit;
+	font-size: inherit;
+	border-bottom: none;
+}
+/* #資源循環
+----------------------- */
+#recycling .boxFig.img-half {
+	margin-left: 0;
+}
+#recycling .img-half img {
+	width: 75%;
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Smartphones
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (max-width:1024px){
+	/* 2つ目以降のtableのiPadでのズレ対策用 ここから */
+	/*.targets_results .table-default:nth-of-type(n+2) tbody tr td:nth-child(1){
+		width: 25.1% !important;
+	}*/
+	/* 2つ目以降のtableのiPadでのズレ対策用　ここまで */
+}
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Smartphones
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (max-width:767px){
+	
+	/* #環境会計
+	----------------------- */
+	#accounting .table-default th.cellFix{
+		width:35%;
+		white-space: normal;
+	}
+	/* #環境汚染防止
+	----------------------- */
+	#pollution .table-default th.cellFix{
+		width:35%;
+		white-space: normal;
+	}
+	
+	.environment-btn-list::after{
+	  display: none;
+	}
+	.environment-btn-list li {
+		width: 100%;
+	}
+	.environment-btn-list .btnDefault2 {
+		max-width: 100%;
+	}
+	/* #環境リスクマネジメント
+	----------------------- */
+	.txt-caution {
+		font-size: 13px;
+	}
+	/* #環境行動目標と実績
+	----------------------- */
+	.targets_results .table-default {
+		width: 100%;
+		border: none;
+		margin-top: 3em;
+	}
+	.targets_results .table-default:nth-of-type(1){
+		margin-top: 0;
+	}
+	.targets_results .table-default caption {
+		display: block;
+		text-align: left;
+		font-weight: bold;
+		padding: 10px 0;
+	}
+	.targets_results .table-default tr th {
+		display: none;
+	}
+	.sp-ttl {
+		display: block;
+		background-color: #eaeaea;
+		text-align: center;
+		margin-bottom: 10px;
+		padding: 10px 5px;
+	}
+	.targets_results .table-default tr {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.targets_results .table-default tr td {
+		padding: 0 0 30px;
+		vertical-align: top;
+		border: none;
+	    background-color: #fff;
+	}
+	.td-inner {
+		padding: 0 5px;
+	}
+	.targets_results .table-default tr td:nth-child(1) {
+		display: none;
+	}
+	.targets_results .table-default tr td:nth-child(2),
+	.targets_results .table-default tr td:nth-child(3),
+	.targets_results .table-default tr td:nth-child(4),
+	.targets_results .table-default tr td:nth-child(5){
+		width: 100% !important;
+	}
+	.targets_results .bg-gray {
+	    background-color: #fff;
+	}
+	.targets_results .line-btm-none {
+		border-bottom: none;
+	}
+	.targets_results .table-default tr.lastTR td:nth-child(1),
+	.targets_results .table-default tr.lastTR td:nth-child(3),
+	.targets_results .table-default tr.lastTR td:nth-child(4) {
+		display: block;
+		width: 100% !important;
+	}
+	/* 2つ目以降のtableのth消す ここから */
+	.targets_results .table-default:nth-of-type(n+2){
+		border-top: 1px solid #ddd;
+	}
+	.targets_results .table-default:nth-of-type(n+2) thead tr th{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #ddd;
+	}
+	.targets_results .table-default:nth-of-type(n+2) thead tr th span{
+		display: block !important;
+	}
+
+	
+
+
+
+	/* #地球温暖化防止
+	----------------------- */
+	.sp-table-scroll .table-caption-ttl {
+		position: sticky;
+		top: 0;
+		left: 0;
+	}
+	.climate .table-default,
+	.pollution .table-default {
+		width: 100%;
+	}
+	.sp-visible {
+		display: block;
+	}
+	/* #環境活動報告書
+	----------------------------------------------- */
+	#reports .box-clm4WideL .boxFig figure{
+		width: 75%;
+		margin: 0 auto 1em auto;
+	}
+}

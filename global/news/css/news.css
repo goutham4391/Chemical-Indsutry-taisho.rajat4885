@@ -1,0 +1,289 @@
+@charset "utf-8";
+/* CSS Document */
+/*-----------------------------------------------------------*/
+/* #newsIndex
+-------------------------------------------------------------*/
+.blank::after, a.blank::after{display: none;}
+a.blank .imgIconBlank{margin-left:3px; vertical-align: baseline;}
+
+@media only screen and (max-width:767px){
+	#newsIndex ul.list-inline li{display: inline-block; margin-right: 1em;}
+}
+
+
+/* all
+-------------*/
+#newsContents{padding-top:30px;}
+
+/* 文字数が多くて改行してしまうパンくずを制御 */
+#newsIndex #topicPath .boxContentsOuter #topicPathMenu li.current{
+	width: 81% !important;
+}
+
+/*-----------------------------------------------------------*/
+/* .newsDetail
+-------------------------------------------------------------*/
+
+
+
+#newsContents{margin-top:40px;}
+.boxFig figure{margin-bottom: 60px;}
+#contents h1 span {
+    font-size: 36px;
+    display: block;
+}
+/* ol */
+#newsContents ol[start="2"] { counter-reset: item 1;}
+#newsContents ol[start="3"] { counter-reset: item 2;}
+#newsContents ol[start="4"] { counter-reset: item 3;}
+#newsContents ol[start="5"] { counter-reset: item 4;}
+#newsContents ol[start="6"] { counter-reset: item 5;}
+#newsContents ol[start="7"] { counter-reset: item 6;}
+#newsContents ol[start="8"] { counter-reset: item 7;}
+#newsContents ol[start="9"] { counter-reset: item 8;}
+#newsContents ol[start="10"] { counter-reset: item 9;}
+#newsContents ol[start="11"] { counter-reset: item 10;}
+#newsContents ol[start="12"] { counter-reset: item 11;}
+#newsContents ol[start="13"] { counter-reset: item 12;}
+#newsContents ol[start="14"] { counter-reset: item 13;}
+#newsContents ol[start="15"] { counter-reset: item 14;}
+#newsContents ol[start="16"] { counter-reset: item 15;}
+#newsContents ol[start="17"] { counter-reset: item 16;}
+#newsContents ol[start="18"] { counter-reset: item 17;}
+#newsContents ol[start="19"] { counter-reset: item 18;}
+#newsContents ol[start="20"] { counter-reset: item 19;}
+/*=============================================================
+ freeComponent Reset
+=============================================================*/
+.freeComponent{
+	clear:both !important;
+	margin-bottom: 1em;
+}
+.freeComponent::after{
+	content:"";
+	display:block;
+	clear:both;
+	width:0;
+	height:0;
+}
+
+/*=============================================================
+ main images
+=============================================================*/
+.freeComponent figure{
+	text-align: center !important;
+	margin-bottom: 30px;
+}
+.freeComponent figure img{
+	float: none;
+}
+
+/*=============================================================
+ text
+=============================================================*/
+.freeComponent p{
+	clear:both !important;
+	margin-bottom: 1em;
+}
+.freeComponent p::after{
+	content:"";
+	display:block;
+	clear:both;
+	width:0;
+	height:0;
+}
+.freeComponent blockquote{
+	text-indent: 1em;
+	padding: 0 1em;
+
+}
+
+/*=============================================================
+ hr
+=============================================================*/
+.freeComponent hr{
+	border: 1px solid #ccc;
+	margin-bottom: 1em;
+}
+
+/*=============================================================
+ list
+=============================================================*/
+/* list-dot */
+.boxLine ul:not([class]),
+.freeComponent ul{
+	margin-bottom: 1em;
+}
+.boxLine ul:not([class]) li,
+.freeComponent ul li{
+	padding:0 0 0 0.8em;
+	position:relative;
+}
+.boxLine ul:not([class]) li:before,
+.freeComponent ul li::before{
+	content:"";
+	display:block;
+	width:7px;
+	height:7px;
+	background:#0096E0;
+	border-radius:100px;
+	position:absolute;
+	top:11px;
+	left:0;
+}
+@media all and (-ms-high-contrast: none){
+.freeComponent ul li::before{
+	top:9px;
+}
+}
+
+/* list-num */
+.boxLine ol,
+.freeComponent ol{
+	list-style: none;
+	counter-reset: li; /* ol_li カウンタをセットする(値もリセット) */
+	margin-bottom: 1em;
+}
+.boxLine ol li,
+.freeComponent ol li{
+	padding-left: 1em;
+	text-indent: -1em;
+	list-style-position:inside;
+}
+.boxLine ol li:before,
+.freeComponent ol li:before {
+	margin-right: .5em;
+	counter-increment: li; /* ol_li カウンタの値に1加える */
+	content: counter(li); /* before擬似要素のcontentで出力 */
+	color: #0096E0; /* 色を変更 */
+	font-weight:700;
+}
+
+
+/*=============================================================
+ link
+=============================================================*/
+#newsContents a{
+	display:inline-block;
+	padding:4px 0 4px 16px;
+	position:relative;
+	word-break: break-all;
+}
+#newsContents a::before{
+	content:"";
+	display:block;
+	width:8px;
+	height:8px;
+	border-bottom:2px solid #0053d5;
+	border-right:2px solid #0053d5;
+	position:absolute;
+	top:14px;
+	left:0;
+	transform:rotate(-45deg);
+}
+
+/* blank */
+#newsContents a[target="_blank"] {
+	display:inline-block;
+	padding:4px 19px 4px 16px;
+	position:relative;
+	word-break: break-all;
+}
+#newsContents a[target="_blank"]::after{
+	content:"";
+	display:block;
+	width:14px;
+	height:14px;
+	position:absolute;
+	top:11px;
+	right:0;
+	background: url("../../shared/img/icn_blank_blue.svg") no-repeat center center;
+	background-size:100% 100%;
+}
+
+
+
+/*=============================================================
+ table
+=============================================================*/
+.freeComponent table{
+	width:100%;
+	border-collapse:collapse;
+	border-top:1px solid #ddd;
+}
+.freeComponent table th,
+.freeComponent table td{
+	padding:10px;
+	border-bottom:1px solid #ddd;
+	background-color:#fff;
+}
+.freeComponent table th{
+	border-right:1px solid #ddd;
+	background-color:#eaeaea;
+}
+.freeComponent table th:last-child{
+	border-right:none;
+}
+.freeComponent table td{
+	border-right:1px solid #ddd;
+}
+.freeComponent table td:last-child{
+	border-right:none;
+}
+.freeComponent table tr:nth-child(even) th,
+.freeComponent table tr:nth-child(even) td{
+	background-color:#f8f8f8;
+}
+.freeComponent table th{
+	text-align:center;
+}
+.freeComponent table th.ttl{
+	background-color:#eaeaea;
+}
+
+
+/*=============================================================
+ text
+=============================================================*/
+.freeComponent b,
+.freeComponent strong{font-weight:700 !important;}
+
+.freeComponent p.note{
+	font-size:14px;
+}
+.freeComponent sup{
+	font-size: 13px;
+	bottom: 0.3em;
+}
+.freeComponent sub{
+	font-size: 13px;
+	top: 0.1em;
+}
+/*=============================================================
+ image
+=============================================================*/
+.freeComponent img{
+	float: left;
+	margin-right: 30px;
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Tablets
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (max-width:1023px){
+	/* 文字数が多くて改行してしまうパンくずを制御 */
+	#newsIndex #topicPath .boxContentsOuter #topicPathMenu li.current{
+		width: 75% !important;
+	}
+
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Smartphones
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (max-width:767px){
+
+
+}

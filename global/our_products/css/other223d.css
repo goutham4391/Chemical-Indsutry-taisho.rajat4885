@@ -1,0 +1,680 @@
+@charset "utf-8";
+/*=============================================================
+ Layout
+=============================================================*/
+/* keyFigures
+-------------------------------------------------------------*/
+
+
+/* 共通 -------------------------------------------------------------*/
+
+#keyFigures .flex-1-1-1,
+#keyFigures .flex-1-2-1{
+	display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100%;
+	width: 100%;
+	height: 544px;
+	/*height: 543px;*/
+}
+#keyFigures .item-01,
+#keyFigures .item-02,
+#keyFigures .item-03,
+#keyFigures .item-04 {
+  width : 33.33333% ;
+  width : -webkit-calc(100% / 3) ;
+  width : calc(100% / 3) ;
+  height: 100%;
+	position: relative;
+  overflow: hidden;
+}
+
+#keyFigures .txtNum {
+	display: inline-block;
+	font-size: 54px;
+	line-height: 0.4;
+	font-weight: 600;
+}
+#keyFigures .txtL{
+	font-size: 36px;
+	line-height: 0.8;
+	font-weight: 600;
+	margin-top: 0;
+}
+#keyFigures .txtS{
+	font-size: 20px;
+	margin-top: 0;
+	display: inline-block;
+}
+#keyFigures figure {
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+}
+#keyFigures .item-01>div,
+#keyFigures .item-02>div,
+#keyFigures .item-03>div,
+#keyFigures .item-04>div {
+	position: absolute;
+	width: 100%;
+	padding: 26px 20px 10px;
+	box-sizing: border-box;
+	text-align: left;
+	z-index: 2;
+}
+
+
+
+#keyFigures .flex-1-2-1 .item-02,
+#keyFigures .flex-1-2-1 .item-03{
+	height: 272px;
+}
+
+
+/* tenpra -------------------------------------------------------------*/
+#tempra #keyFigures .flex-1-1-1 .item-01>div .txtNum,
+#tempra #keyFigures .flex-1-1-1 .item-01>div .txtL,
+#tempra #keyFigures .flex-1-1-1 .item-01>div .txtS{
+	color: #ed9118;
+}
+#tempra #keyFigures .flex-1-1-1 .item-02>div .txtNum,
+#tempra #keyFigures .flex-1-1-1 .item-02>div .txtL,
+#tempra #keyFigures .flex-1-1-1 .item-02>div .txtS{
+	color: #fff;
+}
+#tempra #keyFigures .flex-1-1-1 .item-03>div .txtNum,
+#tempra #keyFigures .flex-1-1-1 .item-03>div .txtL,
+#tempra #keyFigures .flex-1-1-1 .item-03>div .txtS{
+	color: #0d4c7c;
+}
+/* item-01 --------------------------------------------*/
+#tempra #keyFigures .flex-1-1-1 .item-01 {
+  background-color: #0d4c7c;
+}
+#tempra #keyFigures .flex-1-1-1 .item-01>figure{
+	bottom: 0;
+}
+/* item-02 --------------------------------------------*/
+#tempra #keyFigures .flex-1-1-1 .item-02 {
+  background-color: #aed7e5;
+}
+#tempra #keyFigures .flex-1-1-1 .item-02>figure{
+	bottom:0; top:0; text-align: left;
+}
+#tempra #keyFigures .flex-1-1-1 .item-02>figure>img {max-width: inherit;
+  height: 543px;
+  margin-left:-15%;
+}
+/* item-03 --------------------------------------------*/
+#tempra #keyFigures .flex-1-1-1 .item-03 {
+  background-color: #f2caa7;
+}
+#tempra #keyFigures .flex-1-1-1 .item-03>figure{
+	bottom:0;
+}
+
+
+/* pabronSeries -------------------------------------------------------------*/
+#pabronSeries #keyFigures .flex-1-1-1 .item-01>div .txtNum,
+#pabronSeries #keyFigures .flex-1-1-1 .item-01>div .txtL,
+#pabronSeries #keyFigures .flex-1-1-1 .item-01>div .txtS{
+	color: #fff;
+}
+#pabronSeries #keyFigures .flex-1-1-1 .item-02>div .txtNum,
+#pabronSeries #keyFigures .flex-1-1-1 .item-02>div .txtL,
+#pabronSeries #keyFigures .flex-1-1-1 .item-02>div .txtS{
+	color: #ed9118;
+}
+#pabronSeries #keyFigures .flex-1-1-1 .item-03>div .txtNum,
+#pabronSeries #keyFigures .flex-1-1-1 .item-03>div .txtL,
+#pabronSeries #keyFigures .flex-1-1-1 .item-03>div .txtS{
+	color: #0d4c7c;
+}
+/* item-01 --------------------------------------------*/
+#pabronSeries #keyFigures .flex-1-1-1 .item-01 {
+  background-color: #0096e0;
+}
+#pabronSeries #keyFigures .flex-1-1-1 .item-01>figure{
+	bottom: 0;
+}
+/* item-02 --------------------------------------------*/
+#pabronSeries #keyFigures .flex-1-1-1 .item-02 {
+  background-color: #0d4c7c; display: flex; align-items: flex-end;
+}
+#pabronSeries #keyFigures .flex-1-1-1 .item-02>div{top:0;}
+#pabronSeries #keyFigures .flex-1-1-1 .item-02>figure{
+	bottom:0; position: relative;
+}
+#pabronSeries #keyFigures .flex-1-1-1 .item-02>div .txtS{
+	color: #fff;
+}
+/* item-03 --------------------------------------------*/
+#pabronSeries #keyFigures .flex-1-1-1 .item-03 {
+  background-color: #aed7e5;
+}
+#pabronSeries #keyFigures .flex-1-1-1 .item-03>figure{
+	bottom:0;
+}
+
+
+/* riupSeries -------------------------------------------------------------*/
+#riupSeries #keyFigures .flex-1-1-1 .item-01>div .txtNum,
+#riupSeries #keyFigures .flex-1-1-1 .item-01>div .txtL,
+#riupSeries #keyFigures .flex-1-1-1 .item-01>div .txtS{
+	color: #fff;
+}
+#riupSeries #keyFigures .flex-1-1-1 .item-02>div .txtNum,
+#riupSeries #keyFigures .flex-1-1-1 .item-02>div .txtL,
+#riupSeries #keyFigures .flex-1-1-1 .item-02>div .txtS{
+	color: #ed9118;
+}
+#riupSeries #keyFigures .flex-1-1-1 .item-03>div .txtNum,
+#riupSeries #keyFigures .flex-1-1-1 .item-03>div .txtL,
+#riupSeries #keyFigures .flex-1-1-1 .item-03>div .txtS{
+	color: #0d4c7c;
+}
+/* item-01 --------------------------------------------*/
+#riupSeries #keyFigures .flex-1-1-1 .item-01 {
+  background-color: #0096e0;
+}
+#riupSeries #keyFigures .flex-1-1-1 .item-01>figure{
+	bottom: 0;
+}
+#riupSeries #keyFigures .flex-1-1-1 .item-01 .it01txBox{
+	display: inline-block;
+    vertical-align: top;
+}
+/* item-02 --------------------------------------------*/
+#riupSeries #keyFigures .flex-1-1-1 .item-02 {
+  background-color: #0d4c7c; display: flex; align-items: flex-end;
+}
+#riupSeries #keyFigures .flex-1-1-1 .item-02>figure{
+	bottom:0; position:relative;
+}
+#riupSeries #keyFigures .flex-1-1-1 .item-02>div{
+	text-align: center;
+	display: block; top:0;
+}
+#riupSeries #keyFigures .flex-1-1-1 .item-02>div .txtS{
+	color: #fff;
+}
+/* item-03 --------------------------------------------*/
+#riupSeries #keyFigures .flex-1-1-1 .item-03 {
+  background-color: #ed9118;
+}
+#riupSeries #keyFigures .flex-1-1-1 .item-03>figure{
+	bottom:0;
+}
+#riupSeries #keyFigures .flex-1-1-1 .item-03>div{
+	text-align: center;
+	display: block;
+}
+#riupSeries #keyFigures .flex-1-1-1 .item-03>div .txtS{
+	color: #fff;
+}
+
+
+
+
+
+/* dafalgan -------------------------------------------------------------*/
+#dafalgan #keyFigures .flex-1-1-1 .item-01>div .txtNum,
+#dafalgan #keyFigures .flex-1-1-1 .item-01>div .txtL{color: #ed9118;}
+#dafalgan #keyFigures .flex-1-1-1 .item-01>div .txtS{color: #fff;}
+
+#dafalgan #keyFigures .flex-1-1-1 .item-02>div .txtNum,
+#dafalgan #keyFigures .flex-1-1-1 .item-02>div .txtL{color: #0d4c7c;}
+#dafalgan #keyFigures .flex-1-1-1 .item-02>div .txtS{color: #1b8cce;}
+
+
+#dafalgan #keyFigures .flex-1-1-1 .item-03>div .txtNum,
+#dafalgan #keyFigures .flex-1-1-1 .item-03>div .txtL,
+#dafalgan #keyFigures .flex-1-1-1 .item-03>div .txtS{color: #0d4c7c;}
+
+#dafalgan #keyFigures .flex-1-1-1 .item-01>div .txtNum,
+#dafalgan #keyFigures .flex-1-1-1 .item-02>div .txtNum,
+#dafalgan #keyFigures .flex-1-1-1 .item-03>div .txtNum{display: block;    margin-top: 12px;}
+
+/* item-01 --------------------------------------------*/
+#dafalgan #keyFigures .flex-1-1-1 .item-01 {
+  background-color: #0d4c7c;
+}
+#dafalgan #keyFigures .flex-1-1-1 .item-01>figure{
+	bottom: 0;
+}
+#dafalgan #keyFigures .flex-1-1-1 .item-01>div{
+	display: block;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em;
+}
+/* item-02 --------------------------------------------*/
+#dafalgan #keyFigures .flex-1-1-1 .item-02 {
+  background-color: #eec7a6; display: flex; align-items: flex-end;
+}
+#dafalgan #keyFigures .flex-1-1-1 .item-02>figure{
+	bottom:0; position: relative;
+}
+#dafalgan #keyFigures .flex-1-1-1 .item-02>div{
+	display: block;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em
+}
+
+/* item-03 --------------------------------------------*/
+#dafalgan #keyFigures .flex-1-1-1 .item-03 {
+  background-color: #aed7e5;
+}
+#dafalgan #keyFigures .flex-1-1-1 .item-03>figure{
+	bottom:0;
+    text-align: right;
+}
+#dafalgan #keyFigures .flex-1-1-1 .item-03>div{
+	display: block;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em
+}
+#dafalgan #keyFigures .flex-1-1-1 .item-03>figure img{
+	width: 130% !important;
+    max-width: inherit;
+    margin-left: -100px;
+}
+
+
+
+/* counterpain -------------------------------------------------------------*/
+#counterpain #keyFigures .flex-1-1-1 .item-01>div .txtNum,
+#counterpain #keyFigures .flex-1-1-1 .item-01>div .txtL{color: #0d4c7c;}
+#counterpain #keyFigures .flex-1-1-1 .item-01>div .txtS{color: #ed9118; margin-top:-10px;}
+
+#counterpain #keyFigures .flex-1-1-1 .item-02>div .txtNum,
+#counterpain #keyFigures .flex-1-1-1 .item-02>div .txtL{color: #fff;}
+#counterpain #keyFigures .flex-1-1-1 .item-02>div .txtS{color: #0d4c7c; display: block;}
+
+#counterpain #keyFigures .flex-1-1-1 .item-03>div .txtNum,
+#counterpain #keyFigures .flex-1-1-1 .item-03>div .txtL{color: #ed9118;font-size: 54px;}
+#counterpain #keyFigures .flex-1-1-1 .item-03>div .txtS{color: #fff;}
+
+/* item-01 --------------------------------------------*/
+#counterpain #keyFigures .flex-1-1-1 .item-01 {
+  background-color: #eec7a6;
+}
+#counterpain #keyFigures .flex-1-1-1 .item-01>figure{
+	bottom: 0;
+}
+#counterpain #keyFigures .flex-1-1-1 .item-01>figure img{
+max-height: 480px;
+    margin: 0 auto;}
+#counterpain #keyFigures .flex-1-1-1 .item-01>div{
+	display: block;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em;
+}
+/* item-02 --------------------------------------------*/
+#counterpain #keyFigures .flex-1-1-1 .item-02 {
+  background-color: #aed7e5;
+}
+#counterpain #keyFigures .flex-1-1-1 .item-02>figure{
+	bottom:0; top:0;
+}
+
+#counterpain #keyFigures .flex-1-1-1 .item-02>div{
+	display: block;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em
+}
+
+/* item-03 --------------------------------------------*/
+#counterpain #keyFigures .flex-1-1-1 .item-01,
+#counterpain #keyFigures .flex-1-1-1 .item-03 {display: flex; align-items: flex-end;}
+#counterpain #keyFigures .flex-1-1-1 .item-01 figure,
+#counterpain #keyFigures .flex-1-1-1 .item-03 figure{position: relative;}
+#counterpain #keyFigures .flex-1-1-1 .item-03 {
+  background-color: #0d4c7c;
+}
+#counterpain #keyFigures .flex-1-1-1 .item-03>figure{
+	bottom:0;
+}
+#counterpain #keyFigures .flex-1-1-1 .item-03>figure img{
+max-height: 480px; margin:0 0 15px 30px; max-width: calc(100% - 35px);
+}
+@media only screen and (max-width: 767px){
+#counterpain #keyFigures .flex-1-1-1 .item-03>figure img{max-height: 436px;}
+}
+#counterpain #keyFigures .flex-1-1-1 .item-03>div{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+
+
+
+/* efferalgan -------------------------------------------------------------*/
+#efferalgan #keyFigures .flex-1-1-1 .item-01>div .txtNum,
+#efferalgan #keyFigures .flex-1-1-1 .item-01>div .txtL{color: #ed9118;}
+#efferalgan #keyFigures .flex-1-1-1 .item-01>div .txtS{color: #fff; display: block;}
+
+#efferalgan #keyFigures .flex-1-1-1 .item-02>div .txtNum,
+#efferalgan #keyFigures .flex-1-1-1 .item-02>div .txtL{color: #0d4c7c;}
+#efferalgan #keyFigures .flex-1-1-1 .item-02>div .txtS{color: #fff; display: block;}
+
+#efferalgan #keyFigures .flex-1-1-1 .item-03>div .txtNum,
+#efferalgan #keyFigures .flex-1-1-1 .item-03>div .txtL{color: #1b8cce;}
+#efferalgan #keyFigures .flex-1-1-1 .item-03>div .txtS{color: #0d4c7c;}
+
+/* item-01 --------------------------------------------*/
+#efferalgan #keyFigures .flex-1-1-1 .item-01 {
+  background-color: #0d4c7c;
+}
+#efferalgan #keyFigures .flex-1-1-1 .item-01>figure{
+	bottom: 0;
+}
+#efferalgan #keyFigures .flex-1-1-1 .item-01>figure img{max-height: 480px;}
+#efferalgan #keyFigures .flex-1-1-1 .item-01>div{
+	display: block;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em;
+	padding: 16px 20px 10px;
+}
+/* item-02 --------------------------------------------*/
+#efferalgan #keyFigures .flex-1-1-1 .item-02 {
+  background-color: #ed9118;
+}
+#efferalgan #keyFigures .flex-1-1-1 .item-02>figure{
+	bottom:0;
+}
+#efferalgan #keyFigures .flex-1-1-1 .item-02>figure img{max-height: 480px;}
+#efferalgan #keyFigures .flex-1-1-1 .item-02>div{
+	display: block;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em
+}
+/* item-03 --------------------------------------------*/
+#efferalgan #keyFigures .flex-1-1-1 .item-03 {
+  background-color: #aed7e5;
+}
+#efferalgan #keyFigures .flex-1-1-1 .item-03>figure{
+	bottom:0;
+}
+#efferalgan #keyFigures .flex-1-1-1 .item-03>div{
+	display: block;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em;
+	padding: 16px 20px 10px;
+}
+
+
+
+
+/* hapacol -------------------------------------------------------------*/
+#hapacol #keyFigures .flex-1-2-1 .item-01>div .txtNum,
+#hapacol #keyFigures .flex-1-2-1 .item-01>div .txtL{color: #ed9118;}
+#hapacol #keyFigures .flex-1-2-1 .item-01>div .txtS{color: #fff; display: block;}
+
+#hapacol #keyFigures .flex-1-2-1 .item-02>div .txtNum,
+#hapacol #keyFigures .flex-1-2-1 .item-02>div .txtL{color: #bb3d27;}
+#hapacol #keyFigures .flex-1-2-1 .item-02>div .txtS{color: #0d4c7c; display: block;}
+
+#hapacol #keyFigures .flex-1-2-1 .item-03>div .txtNum,
+#hapacol #keyFigures .flex-1-2-1 .item-03>div .txtL,
+#hapacol #keyFigures .flex-1-2-1 .item-03>div .txtNum .txtS{color: #fff;}
+#hapacol #keyFigures .flex-1-2-1 .item-03>div .txtS{color: #0d4c7c; font-weight:normal !important;}
+
+#hapacol #keyFigures .flex-1-2-1 .item-04>div .txtNum,
+#hapacol #keyFigures .flex-1-2-1 .item-04>div .txtL,
+#hapacol #keyFigures .flex-1-2-1 .item-04>div .txtS{color: #fff;}
+
+/* item-01 --------------------------------------------*/
+#hapacol #keyFigures .flex-1-2-1 .item-01 {
+  background-color: #0d4c7c;
+}
+#hapacol #keyFigures .flex-1-2-1 .item-01>figure{
+	bottom: 0;
+}
+#hapacol #keyFigures .flex-1-2-1 .item-01>div{
+	display: block;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em;
+	padding: 16px 20px 10px;
+}
+
+/* item-02 --------------------------------------------*/
+#hapacol #keyFigures .flex-1-2-1 .item-02 {
+  background-color: #aed7e5;
+}
+#hapacol #keyFigures .flex-1-2-1 .item-02>figure{
+	bottom:0;
+    right: 0;
+    height: 272px;
+}
+#hapacol #keyFigures .flex-1-2-1 .item-02>figure img{
+    width: auto !important;
+    height: 100%;
+    max-width: inherit;
+    margin-top: 1px;
+    }
+#hapacol #keyFigures .flex-1-2-1 .item-02>div{
+	display: block;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em;
+	padding: 30px 10px 10px;
+}
+/* item-03 --------------------------------------------*/
+#hapacol #keyFigures .flex-1-2-1 .item-03 {
+  background-color: #ed9118;
+}
+#hapacol #keyFigures .flex-1-2-1 .item-03>figure{
+	bottom:0;
+}
+#hapacol #keyFigures .flex-1-2-1 .item-03>div{
+	display: block;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em;
+	padding: 16px 10px 10px;
+}
+/* item-04 --------------------------------------------*/
+#hapacol #keyFigures .flex-1-2-1 .item-04 {
+  background-color: #1b8cce;
+}
+#hapacol #keyFigures .flex-1-2-1 .item-04>figure{
+	bottom:0;
+}
+#hapacol #keyFigures .flex-1-2-1 .item-04>div{
+	display: block;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em;
+	padding: 30px 20px 10px;
+}
+
+
+
+/* all -------------------------------*/
+@media only screen and (max-width: 767px){
+#keyFigures .flex-1-1-1>div img{    max-height: 350px;
+    width: auto !important;}
+}
+
+/* riup -------------------------------*/
+@media screen and (max-width: 1024px){
+#riupSeries #keyFigures .flex-1-1-1 .item-02 > figure img{height: auto !important; max-width:100%;}
+#riupSeries #keyFigures .flex-1-1-1 .item-01 .it01txBox{    left: 20px;
+    top: 3.7em;}
+}
+/* pabron -------------------------------*/
+@media screen and (max-width: 1024px) {
+#pabronSeries #keyFigures .flex-1-1-1 .item-02 > figure img{height: auto !important;}
+#pabronSeries #keyFigures .flex-1-1-1 .item-02>figure img{height: auto;}
+}
+
+/* tempra -------------------------------*/
+#tempra #keyFigures .flex-1-1-1 .item-01>div .txtNum,
+#tempra #keyFigures .flex-1-1-1 .item-02>div .txtNum{display: block;    margin-top: 12px;}
+#tempra #keyFigures .flex-1-1-1 .item-01>figure>img{max-height: 500px;}
+#tempra #keyFigures .flex-1-1-1 .item-03>figure>img{max-height: 400px;}
+@media only screen and (max-width: 767px){
+#tempra #keyFigures .flex-1-1-1 .item-01>figure>img{max-height: 445px;}
+}
+@media only screen and (max-width: 767px){
+#tempra #keyFigures .flex-1-1-1 .item-02>figure>img{max-height: inherit;
+    max-width: inherit !important;
+    height: 480px !important;
+    margin-bottom: -25% !important;}
+}
+@media only screen and (max-width: 500px){
+#tempra #keyFigures .flex-1-1-1 .item-02>figure>img{    margin-bottom: 0 !important;}
+}
+@media screen and (max-width: 1024px) and (min-width: 768px){
+#tempra #keyFigures .flex-1-1-1 .item-02>figure{top:0;}
+#tempra #keyFigures .flex-1-1-1 .item-03>figure>img{max-height: 350px;}
+}
+
+/* dafalgan -----------------------------*/
+@media screen and (max-width: 1024px) and (min-width: 768px){
+#dafalgan #keyFigures .flex-1-1-1 .item-02>figure>img{height: auto !important;}
+}
+@media only screen and (max-width: 767px){
+#dafalgan #keyFigures .flex-1-1-1 .item-01>figure>img{max-height: 480px;}
+#dafalgan #keyFigures .flex-1-1-1 .item-02>figure>img{max-height: inherit;}
+#dafalgan #keyFigures .flex-1-1-1 .item-03>figure>img{max-height: inherit; height: 480px; margin-left: -100px !important;}
+}
+/* counterpain -----------------------------*/
+#counterpain #keyFigures .flex-1-1-1 .item-02>figure>img{width: 130% !important;
+	max-width: inherit;}
+@media only screen and (max-width: 767px){
+#counterpain #keyFigures .flex-1-1-1 .item-02>figure{height: 100%; top:0; text-align: left;}
+#counterpain #keyFigures .flex-1-1-1 .item-02>figure>img{
+    max-height: inherit; height: auto !important; }
+}
+/* hapacol -----------------------------*/
+@media only screen and (max-width: 767px){
+#hapacol #keyFigures .flex-1-2-1 .item-01>figure>img{max-height: 480px;    width: auto !important;}
+#hapacol #keyFigures .flex-1-2-1 .item-02,#hapacol  #keyFigures .flex-1-2-1 .item-03{    height: 272px !important;}
+#hapacol #keyFigures .flex-1-2-1 .item-04>div{display: table;}
+#hapacol #keyFigures .flex-1-2-1 .item-04>div .txtNum{display: table-cell;width: 3.6em;}
+#hapacol #keyFigures .flex-1-2-1 .item-04>div>.txtS{display: table-cell;}
+}
+
+/* efferalgan ------------------------*/
+@media only screen and (max-width: 767px){
+#efferalgan #keyFigures .flex-1-1-1 .item-03>figure{    bottom: -60%;}
+#efferalgan #keyFigures .flex-1-1-1 .item-03>figure>img{ max-width: inherit !important;     max-height: inherit; height: 966px;}
+}
+@media only screen and (max-width: 480px){
+#efferalgan #keyFigures .flex-1-1-1 .item-03>figure{    bottom: -9%; }
+#efferalgan #keyFigures .flex-1-1-1 .item-03>figure>img{ height:580px; }
+}
+
+@media screen and (max-width: 1024px){
+#keyFigures .flex-1-1-1{
+	height: 440px; width:auto !important;
+	}
+#keyFigures .flex-1-1-1 .item-02>figure img {
+  height: 440px !important;
+  object-fit: cover;
+  width:auto !important;
+}
+}
+
+@media screen and (min-width: 768px){ 
+#keyFigures .flex-1-1-1 .item-01>div .txtNum,
+#keyFigures .flex-1-1-1 .item-02>div .txtNum,
+#keyFigures .flex-1-1-1 .item-03>div .txtNum {font-size: 54px;}
+#keyFigures .flex-1-1-1 .item-01>div .txtL,
+#keyFigures .flex-1-1-1 .item-02>div .txtL,
+#keyFigures .flex-1-1-1 .item-03>div .txtL {font-size: 36px;}
+#keyFigures .flex-1-1-1 .item-01>div .txtS,
+#keyFigures .flex-1-1-1 .item-02>div .txtS,
+#keyFigures .flex-1-1-1 .item-03>div .txtS {font-size: 20px;}
+}
+@media screen and (min-width: 1348px){ 
+#keyFigures .flex-1-1-1 .item-01>div .txtNum,
+#keyFigures .flex-1-1-1 .item-02>div .txtNum,
+#keyFigures .flex-1-1-1 .item-03>div .txtNum {font-size: 64px;}
+#keyFigures .flex-1-1-1 .item-01>div .txtL,
+#keyFigures .flex-1-1-1 .item-02>div .txtL,
+#keyFigures .flex-1-1-1 .item-03>div .txtL {font-size: 44px;}
+#keyFigures .flex-1-1-1 .item-01>div .txtS,
+#keyFigures .flex-1-1-1 .item-02>div .txtS,
+#keyFigures .flex-1-1-1 .item-03>div .txtS{font-size: 28px;}
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Smartphones
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (max-width:767px){
+/*=============================================================
+ Layout
+=============================================================*/
+
+
+/* productInfo
+-------------------------------------------------------------*/
+
+/* keyFigures
+-------------------------------------------------------------*/
+#keyFigures{
+	padding: 40px 0;
+}
+#keyFigures .flex-1-1-1,
+#keyFigures .flex-1-2-1{
+	width: 100%;
+	height: auto;
+}
+#keyFigures .flex-1-1-1>div,
+#keyFigures .flex-1-2-1>div{
+	height: 480px!important;
+}
+#keyFigures .flex-1-2-1 .item-02,
+#keyFigures .flex-1-2-1 .item-03{
+	height: 240px!important;
+}
+#keyFigures .flex-1-1-1>div img,
+#keyFigures .flex-1-2-1>div img{
+	max-width: 480px!important;
+	margin: 0 auto!important;
+}
+#keyFigures .item-01,
+#keyFigures .item-02,
+#keyFigures .item-03,
+#keyFigures .item-04 { width: 100%; height: auto;}
+#keyFigures .flex-1-1-1 .item-01>div,
+#keyFigures .flex-1-1-1 .item-02>div,
+#keyFigures .flex-1-1-1 .item-03>div {width: 100%;}
+#keyFigures .flex-1-1-1 .item-01>div .txtNum,
+#keyFigures .flex-1-1-1 .item-02>div .txtNum,
+#keyFigures .flex-1-1-1 .item-03>div .txtNum {font-size: 50px;}
+#keyFigures .flex-1-1-1 .item-01>div .txtL,
+#keyFigures .flex-1-1-1 .item-02>div .txtL,
+#keyFigures .flex-1-1-1 .item-03>div .txtL {font-size: 32px;}
+#keyFigures .flex-1-1-1 .item-01>div .txtS,
+#keyFigures .flex-1-1-1 .item-02>div .txtS,
+#keyFigures .flex-1-1-1 .item-03>div .txtS {font-size: 20px;}
+#keyFigures .flex-1-1-1 .item-01>figure,
+#keyFigures .flex-1-1-1 .item-02>figure,
+#keyFigures .flex-1-1-1 .item-03>figure { width: 100%; text-align: center;}
+/* item-01 ---------------------------------------*/
+/* item-02 ---------------------------------------*/
+#keyFigures .flex-1-1-1 .item-02>figure>img {
+	height:480px;
+  width: 100%;
+  object-fit: cover;
+}
+/* item-03 ---------------------------------------*/
+
+}
+

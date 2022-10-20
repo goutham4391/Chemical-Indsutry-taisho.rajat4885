@@ -1,0 +1,67 @@
+@charset "utf-8";
+/*=============================================================
+privacy
+=============================================================*/
+#privacyTop h2#privacyPolicy{
+	padding-top: 50px;
+	margin-top: 0;
+}
+#privacyTop h2#personalData{
+	padding-top: 40px;
+	margin-top: -40px;
+}
+
+ol.list-num > li{
+	margin-bottom: 1.8em;
+}
+/**/
+ol.list-num li ol.list-brackets li{
+	margin: 0 0 0.5em 1em;
+	text-indent: -2em;
+	counter-increment: none !important;
+}
+ol.list-num li ol.list-brackets li span.num{
+	width: 2.2em;
+/*	color:#0096E0;*/
+	font-weight:700;
+	margin-right: 0.4em;
+}
+ol.list-num li ol.list-brackets li:before{
+	content: none;
+}
+ol.list-num li ol.list-brackets li > ol.list-brackets li{
+	margin: 0 0 0.5em 1em;
+	text-indent: -2em;
+}
+/**/
+#listTable.list-brackets li{
+	margin-bottom: 1em;
+}
+#listTable.list-brackets li span.num{
+	float: left;
+}
+.list-brackets li table.table-full{
+	display: inline-table;
+	width: 98%;
+	margin-left: -0.5em;
+}
+table.table-full th,
+table.table-full td{
+	text-indent: 0em;
+}
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Smartphones
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (max-width:767px){
+	.list-brackets li table.table-full{
+		width: 96%;
+	}
+
+
+
+
+}

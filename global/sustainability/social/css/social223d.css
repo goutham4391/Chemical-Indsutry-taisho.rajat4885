@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+.tmp3rd .box-clm2 li a span,
+.tmp3rd .box-clm3 li a span {
+	text-align: center;
+}
+
+
+
+@media only screen and (max-width:767px){
+	.pNw{ white-space: normal;}
+	#diversity .w50 {
+		width: 100%!important;
+	}
+	#diversity th.w50 {
+		width: 30%!important;
+	}
+}
+
+
+
+/* #信頼保障性
+------------------------------------------------ */
+#quality_assurance #contents .ttl-normal {
+	margin: inherit;
+	margin-top: 35px;
+	padding: inherit;
+	font-size: inherit;
+	border: none;
+}
+#quality_assurance #contents .ttl-normal::before {
+	display: none;
+}
+#quality_assurance .table-caption-ttl {
+	font-weight: bold;
+	text-align: left;
+	margin-top: 20px;
+}
+
+/* #上原記念生命科学財団
+------------------------------------------------ */
+.foundation .table-default tr:nth-child(2n) th {
+    background-color: #fff;
+}
+.sp-visible {
+	display: none;
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Smartphones
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (max-width:767px){
+
+	.pNw{ white-space: normal;}
+
+	/* #信頼保障性
+	----------------------- */
+	/*#quality_assurance #contents .ttl-normal {
+		margin: inherit;
+		margin-top: 25px;
+		padding: inherit;
+		font-size: inherit;
+		border-bottom: none;
+	}*/
+	#qualityAssurance .sp-table-scroll .table-default th.alignL.cellFix{
+		white-space: normal;
+	}
+	#qualityAssurance .sp-table-scroll .table-default td{
+		white-space: normal;
+		min-width: 20em !important;
+	}
+
+
+	/*
+	#quality_assurance .sp-visible {
+		display: block;
+	}*/
+
+
+	/* 従業員とともに＞多様性の尊重　social/employees/diversity.html
+	---------------------------------------------------------------- */
+	#diversity .w50 {
+		width: 100%!important;
+	}
+	#diversity th.w50 {
+		width: 30%!important;
+	}
+	#diversity #contents .sp-table-scroll .arwSc{
+		width: 80px;
+		height: 80px;
+		background-size: cover;
+	}
+
+	/* 従業員とともに＞労働安全衛生　social/employees/health_safety.html
+	---------------------------------------------------------------- */
+	#healthSafety #contents .sp-table-scroll .arwSc{
+		width: 80px;
+		height: 80px;
+		background-size: cover;
+	}
+
+	/* #上原記念生命科学財団
+	----------------------------------------------- */
+	#ueharaFoundation .sp-table-scroll .table-full th{
+		white-space: normal;
+		min-width: 10em !important;
+	}
+	#ueharaFoundation .sp-table-scroll .table-full td{
+		white-space: normal;
+		min-width: 20em !important;
+	}
+	#ueharaFoundation .table-default td{
+		white-space: normal;
+	}
+	#ueharaFoundation .table-default td.nowrap{
+		white-space: nowrap;
+	}
+	
+	#ueharaFoundation .sp-table-scroll:nth-of-type(1) .table-full th{
+		white-space: nowrap !important;
+	}
+	#ueharaFoundation .sp-table-scroll:nth-of-type(1) .table-full td{
+		min-width: 0 !important;
+		white-space: nowrap;
+	}
+	
+	/* #Social Contribution Activities /society/activities.html
+	----------------------------------------------- */
+	#activities .sp-table-scroll:nth-of-type(1) td ul.list-dot{
+		display: block;
+		white-space: normal;
+		min-width: 15em !important;
+	}
+	/* #Work Environments
+	----------------------------------------------- */
+	#workEnvironment .sp-table-scroll:nth-of-type(1) th span{
+		display: block;
+		white-space: normal;
+		min-width: 10em !important;
+	}
+	/* #Health and Safety
+	----------------------------------------------- */
+	#healthSafety .sp-table-scroll:nth-of-type(2) th span{
+		display: block;
+		white-space: normal;
+		min-width: 10em !important;
+	}
+
+
+
+
+
+
+
+}

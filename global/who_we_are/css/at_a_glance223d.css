@@ -1,0 +1,841 @@
+@charset "utf-8";
+/*=============================================================
+ Layout
+=============================================================*/
+p.note{
+	font-size:14px;
+}
+/* pageTtl
+-------------------------------------------------------------*/
+#pageTtl .boxContents{
+	padding:50px 0 70px;
+	text-align: center;
+	background: url("../img/pageTtl_bg.png") no-repeat bottom center;
+	background-size: contain;
+}
+#pageTtl h1{
+	margin:0;
+	padding:0 0 0px;
+	font-size:52px;
+	color:#333;
+	line-height:1.25;
+	text-align:center;
+}
+#pageTtl p:nth-child(2){
+	font-size:80px;
+	color:#0096e0;
+	font-weight:300;
+	line-height:1.25;
+	margin: 0 0 40px;
+}
+#pageTtl p:nth-child(3){
+	margin: 0 0 20px;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.15;
+}
+#pageTtl p:nth-child(5){
+	margin: 10px 0 0;
+	font-size: 42px;
+  font-weight: 600;
+	line-height: 1.2;
+}
+/* leading
+-------------------------------------------------------------*/
+#leading{
+	padding: 130px 0;
+	text-align: center;
+	color: #fff;
+	background: url(../img/leading_bg.png) no-repeat center center;
+	background-size: cover;
+}
+#leading h2{
+	margin:0;
+	padding:0 0 45px;
+	font-size:28px;
+	font-weight:600;
+	line-height:1.15;
+	color:#fff;
+}
+#leading .boxClm{
+	width:100%;
+	max-width:840px;
+	margin:0 auto;
+}
+#leading .boxClm ul{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items: center;
+}
+#leading .boxClm li{
+	width:calc(33%);
+	text-align:center;
+	box-sizing:border-box;
+	padding:0 15px;
+	color:#fff;
+}
+#leading .boxClm li.boxLeft{
+	text-align:right;
+	font-size:70px;
+}
+#leading .boxClm li.boxRight{
+	text-align:left;
+	font-size:40px;
+	line-height:1.0;
+	padding:0 0 0 20px;
+	letter-spacing:0.05em;
+}
+@media screen and (min-width:768px) and ( max-width:1023px) {
+#leading .boxClm ul{
+	transform:scale(0.8,0.8)
+}
+}
+/* brands
+-------------------------------------------------------------*/
+#brands{
+	padding: 60px 0 100px;
+	text-align: center;
+	color: #fff;
+	background: url(../img/brands_bg.png) no-repeat center center;
+	background-size:cover;
+}
+#brands h2{
+	margin:0;
+	padding:0;
+	font-size:28px;
+	font-weight:600;
+	line-height:1.15;
+	color:#fff;
+}
+#brands .boxClm{
+	padding:20px 0 0;
+}
+#brands .boxClm ul{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items: center;
+}
+#brands .boxClm li{
+	width:calc(33%);
+	text-align:center;
+}
+#brands .boxClm li.boxCatch{
+	order:2;
+}
+#brands .boxClm li.boxP1{
+	order:1;
+}
+#brands .boxClm li.boxP2{
+	order:3;
+}
+#brands .boxClm li p{
+	font-size:60px;
+	font-weight:300;
+	line-height:1.0;
+}
+#brands .boxClm li p strong.txtL{
+	font-size:118px;
+	font-weight:300;
+}
+#brands .boxClm li p strong.txtS{
+	font-size:100px;
+	font-weight:300;
+}
+#brands .boxClm li p .txtS{
+	font-size:50px;
+}
+#brands .boxClm li figure img{
+	margin:10px 0 -20px;
+	transform:scale(1.12,1.12)
+}
+/* share
+-------------------------------------------------------------*/
+#share{
+	padding: 70px 0;
+	text-align: center;
+}
+#share h2{
+	margin:0;
+	padding:0;
+	font-size:28px;
+	font-weight:600;
+	line-height:1.15;
+}
+#share .boxClm{
+	padding:0 0 50px;
+}
+#share .boxClm ul{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+#share .boxClm li{
+	width:calc(33%);
+	padding-top:50px;
+}
+#share .boxClm li h3{
+	margin:0 0 30px;
+	font-size:21px;
+	color:#333;
+	font-weight:600;
+	line-height:1.25;
+}
+@media screen and (min-width:768px) and ( max-width:1023px) {
+#share .boxClm li h3 span{
+	display:block;
+}
+#share .boxClm li h3 span.tub{
+	display:block;
+}
+}
+#share .boxClm li figure img{
+	transform:scale(1.12,1.12)
+}
+#share .boxClm li figcaption{
+	margin:-60px 0 0;
+	line-height:1.15;
+}
+#share .boxClm li figcaption .txtL{
+	font-size:43px;
+	font-weight:300;
+	color:#0096e0;
+}
+#share .boxClm li figcaption .txtL strong{
+	font-size:86px;
+	font-weight:300;
+}
+#share .boxClm li figcaption .txtS{
+	font-size:32px;
+}
+
+/* presence
+-------------------------------------------------------------*/
+#presence{
+	padding: 70px 0;
+	text-align: center;
+	background: url(../img/presence_bg.png) no-repeat center top;
+	background-size: cover;
+	position: relative;
+	color: #fff;
+}
+#presence h2{
+	margin:0;
+	padding:0;
+	font-size:28px;
+	font-weight:600;
+	color:#fff;
+	line-height:1.15;
+}
+#presence .boxClm ul{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+#presence .boxClm li{
+	width:calc(33%);
+	padding-top:70px;
+}
+#presence .boxClm li h3{
+	margin:0 0 50px;
+	font-size:35px;
+	font-weight:300;
+	color:#fff;
+	line-height:1.05;
+}
+#presence .boxClm li h3 strong{
+	font-size:70px;
+	font-weight:300;
+	color:#fff;
+}
+#presence .boxClm li figure img{
+	transform:scale(1.3,1.3)
+}
+#presence .boxClm li figcaption{
+	margin:-50px 0 0;
+	line-height:1.25;
+}
+@media only screen and (max-width:1200px){
+#presence .boxClm li figcaption{margin:-30px 0 0;}
+}
+#presence .boxClm li figcaption .txtL{
+	font-size:32px;
+}
+/* history
+-------------------------------------------------------------*/
+#history{
+	padding: 60px 0 120px;
+	text-align: center;
+	background: url(../img/history_bg.jpg) no-repeat center bottom;
+	background-size: cover;
+	position: relative;
+	color:#fff;
+}
+#history h2{
+	margin:0;
+	padding:0;
+	font-size:28px;
+	font-weight:600;
+	color:#fff;
+	line-height:1.15;
+}
+#history .boxTxt{
+	width:50%;
+	padding:70px 0 0;
+}
+#history .boxTxt p{
+	margin:0;
+	font-size:32px;
+	line-height:1.35;
+}
+#history .boxTxt p.boxCatch{
+	margin:10px 0;
+	font-size:70px;
+	font-weight:300;
+	line-height:1.0;
+}
+#history .boxTxt p.boxCatch strong{
+	font-size:140px;
+	font-weight:300;
+	line-height:100px;
+}
+@media screen and (min-width:768px) and ( max-width:1023px) {
+#history .boxTxt{
+	width:100%;
+}
+}
+
+/* lipovitan
+-------------------------------------------------------------*/
+#lipovitan{
+	text-align: center;
+	/*background: url(../img/lipovitan_bg.jpg) no-repeat center top;*/
+	background-size: cover;
+}
+#lipovitan .boxClm{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items: center;
+}
+#lipovitan .boxClm .boxPhoto{
+	width:calc(62%);
+}
+#lipovitan .boxClm .boxTxt{
+	width:calc(38%);
+	text-align:center;
+	order:2;
+}
+#lipovitan .boxClm .boxTxtInner{
+}
+#lipovitan .boxClm .boxTxt p{
+	margin:0;
+	font-size:32px;
+	line-height:1.35;
+}
+#lipovitan .boxClm .boxTxt p.boxCatch{
+	margin:10px 0;
+	font-size:70px;
+	font-weight:300;
+	line-height:1.0;
+}
+#lipovitan .boxClm .boxTxt p.boxCatch strong{
+	font-size:140px;
+	font-weight:300;
+	line-height:100px;
+}
+@media screen and (min-width:768px) and ( max-width:1023px) {
+#lipovitan .boxClm .boxTxtInner{
+	transform:scale(0.7,0.7)
+}
+}
+/* lifestyle
+-------------------------------------------------------------*/
+#lifestyle{
+	padding: 70px 0;
+	text-align: center;
+	background: url(../img/lifestyle_photo.jpg) no-repeat center top;
+	background-size:cover;
+	position:relative;
+}
+#lifestyle .boxTtl{
+	width:100%;
+	position:absolute;
+	top:22%;
+	left:0;
+}
+#lifestyle h2{
+	margin:0;
+	padding:0;
+	font-size:44px;
+	font-weight:400;
+	color:#fff;
+	line-height:1.15;
+}
+@media screen and (min-width:768px) and ( max-width:1023px) {
+#lifestyle h2{
+	transform:scale(0.7,0.7)
+}
+}
+/* remedy
+-------------------------------------------------------------*/
+#remedy{
+	padding:90px 0;
+	text-align:center;
+	background-color:#f5f5f5;
+}
+#remedy h2{
+	margin:0;
+	padding:0;
+	font-size:28px;
+	font-weight:400;
+}
+#remedy .boxClm{
+	max-width:1150px;
+	margin:0 auto;
+}
+#remedy .boxClm ul{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+#remedy .boxClm ul li{
+	width:calc(50%);
+	padding:40px 0 0;
+}
+#remedy .boxClm ul li img{
+	width:250px;
+}
+#remedy .boxClm ul li figcaption{
+	padding:20px 0 0;
+	line-height:1.00;
+	font-size:36px;
+	color:#0096e0;
+}
+#remedy .boxClm ul li figcaption strong{
+	font-size:80px;
+	font-weight:300;
+}
+#remedy p{
+	padding:20px 0 0;
+}
+/* network
+-------------------------------------------------------------*/
+#network{
+	padding:80px 0 60px;
+	text-align:center;
+	background:linear-gradient(to right, #4ab3e6, #4b84df);
+	color:#fff;
+}
+#network h2{
+	margin:0;
+	padding:0;
+	font-size:28px;
+	font-weight:400;
+}
+#network p.boxCatch{
+	font-size:37px;
+	line-height: 1.00;
+	position: relative;
+  margin-bottom: -40px;
+}
+#network p.boxCatch strong{
+	font-size:67px;
+	font-weight:300;
+}
+#network p:not(.boxCatch){
+	font-size:32px;
+	position: relative;
+  margin-top: -70px;
+}
+/* explore
+-------------------------------------------------------------*/
+#explore{
+	padding:90px 0;
+	background-color:#dddddd;
+	text-align:center;
+}
+#explore h2{
+	margin:0;
+	padding:0;
+	font-size:32px;
+	font-weight:400;
+}
+#explore h3{
+	margin:0 0 10px;
+	font-size:22px;
+	font-weight:300;
+	line-height: 1.35;
+	color:#333333;
+}
+#explore .boxClm{
+	max-width:1080px;
+	margin:0 auto;
+}
+#explore .boxClm ul{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+#explore .boxClm ul li{
+	width:calc(23%);
+	padding:70px 0 0;
+	text-align: left;
+}
+#explore .boxClm ul li a{
+	display: block;
+	color:#333;
+	text-decoration:none;
+}
+#explore .boxClm ul li figcaption{
+	padding:30px 0 0;
+}
+#explore .boxClm ul li .txt span{
+	display: block;
+	position: relative;
+	padding: 4px 0 4px 16px;
+	font-size: 26px;
+}
+#explore .boxClm ul li .txt span::before {
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-bottom: 2px solid #0053d5;
+	border-right: 2px solid #0053d5;
+	position: absolute;
+	top: 21px;
+	left: 0;
+	transform: rotate(-45deg);
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Smartphones
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (max-width:767px){
+/*=============================================================
+ Layout
+=============================================================*/
+/* pageTtl
+-------------------------------------------------------------*/
+/* pageTtl
+-------------------------------------------------------------*/
+#pageTtl .boxContents{
+	padding:0;
+	text-align: center;
+	background: none;
+}	
+#pageTtl{
+	padding:40px 0 60px;
+	background: url("../img/pageTtl_bg_sp.png") no-repeat center center;
+	background-size: cover;
+}
+#pageTtl h1{
+	font-size: 42px;
+	line-height: 1.10;
+	text-align: left;	
+	margin-bottom: 50px;
+}
+#pageTtl p:nth-child(2){
+	font-size:44px;
+	line-height:1.05;
+	margin-bottom: 30px;
+}
+#pageTtl p:nth-child(3) {
+	font-size: 22px;
+	line-height: 1.15;
+}
+#pageTtl figure img{
+	max-width: 100px;
+	width: 100%;
+}	
+#pageTtl p:nth-child(5) {
+	font-size: 26px;
+	line-height: 1.15;
+}	
+/* leading
+-------------------------------------------------------------*/
+#leading{
+	padding: 70px 0;
+}
+#leading h2{
+	padding:0 0 20px;
+	font-size:20px;
+}
+#leading .boxClm li{
+	padding:0 5px;
+}
+#leading .boxClm li.boxLeft{
+	font-size:30px;
+}
+#leading .boxClm li.boxRight{
+	font-size:17px;
+	padding:0 0 0 8px;
+}
+
+/* brands
+-------------------------------------------------------------*/
+#brands{
+	padding: 50px 0 25px;
+}
+#brands h2{
+	font-size:20px;
+}
+#brands .boxClm{
+	padding:0;
+}
+#brands .boxClm ul{
+	display:block;
+}
+#brands .boxClm li{
+	width:calc(100%);
+}
+#brands .boxClm li.boxCatch{
+	padding-bottom:20px;
+}
+#brands .boxClm li p{
+	font-size:36px;
+}
+#brands .boxClm li p strong.txtL{
+	font-size:70px;
+}
+#brands .boxClm li p strong.txtS{
+	font-size:60px;
+}
+#brands .boxClm li p .txtS{
+	font-size:30px;
+}
+
+/* share
+-------------------------------------------------------------*/
+#share{
+	padding: 50px 0;
+	text-align: center;
+}
+#share h2{
+	font-size:20px;
+}
+#share .boxClm{
+	padding:0 0 40px;
+}
+#share .boxClm li{
+	width:calc(50%);
+	padding-top:40px;
+}
+#share .boxClm li h3{
+	margin:0 0 16%;
+	font-size:18px;
+}
+#share .boxClm li h3 span.sp{
+	display:block;
+}
+#share .boxClm li figure img{
+	transform:scale(1.35,1.35)
+}
+#share .boxClm li figcaption{
+	margin:-30px 0 0;
+}
+#share .boxClm li figcaption .txtL{
+	font-size:25px;
+}
+#share .boxClm li figcaption .txtL strong{
+	font-size:50px;
+}
+#share .boxClm li figcaption .txtS{
+	font-size:22px;
+}
+/* presence
+-------------------------------------------------------------*/
+#presence{
+	padding: 50px 0;
+}
+#presence h2{
+	font-size:20px;
+}
+#presence .boxClm li{
+	width:calc(50%);
+	padding-top:40px;
+}
+#presence .boxClm li h3{
+	font-size:21px;
+	margin: 0 0 22%;
+}
+#presence .boxClm li h3 strong{
+	font-size:45px;
+}
+#presence .boxClm li figure img{
+	transform:scale(1.55,1.55)
+}
+#presence .boxClm li figcaption{
+	margin:-15px 0 0;
+	line-height:1.25;
+}
+#presence .boxClm li figcaption .txtL{
+	font-size:19px;
+}
+#presence .boxClm li figcaption .txtS{
+	font-size:15px;
+}
+/* history
+-------------------------------------------------------------*/
+#history{
+	padding: 50px 0 170px;
+	background: url(../img/history_bg_sp.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+#history h2{
+	font-size:20px;
+}
+#history .boxTxt{
+	width:100%;
+	padding:25px 0 0;
+}
+#history .boxTxt p{
+	font-size:22px;
+}
+#history .boxTxt p.boxCatch{
+	margin:0;
+	font-size:48px;
+	line-height:0.8;
+}
+#history .boxTxt p.boxCatch strong{
+	font-size:96px;
+	line-height:90px;
+}
+/* lipovitan
+-------------------------------------------------------------*/
+#lipovitan .boxClm{
+	padding:40px 0 10px;
+	display:block;
+}
+#lipovitan .boxClm .boxPhoto{
+	width:calc(100%);
+}
+#lipovitan .boxClm .boxTxt{
+	width:calc(100%);
+}
+#lipovitan .boxClm .boxTxtInner{
+}
+#lipovitan .boxClm .boxTxt p{
+	font-size:22px;
+}
+#lipovitan .boxClm .boxTxt p.boxCatch{
+	margin:0;
+	font-size:48px;
+	line-height:0.8;
+}
+#lipovitan .boxClm .boxTxt p.boxCatch strong{
+	font-size:96px;
+	line-height:90px;
+}
+/* lifestyle
+-------------------------------------------------------------*/
+#lifestyle{
+	padding:50px 0;
+	background: url(../img/lifestyle_photo_sp.jpg) no-repeat center top;
+	background-size:cover;
+}
+#lifestyle .boxTtl{
+	width:100%;
+	position:static;
+	padding-bottom:15px;
+}
+#lifestyle h2{
+	font-size:23px;
+	letter-spacing:-0.01;
+}
+#lifestyle h2 br{
+	display:none;
+}
+/* remedy
+-------------------------------------------------------------*/
+#remedy{
+	padding:50px 0;
+}
+#remedy h2{
+	font-size:20px;
+}
+#remedy .boxClm ul{
+	display:block;
+}
+#remedy .boxClm ul li{
+	width:calc(100%);
+	padding:40px 0 0;
+}
+#remedy .boxClm ul li img{
+	width: 48%;
+}
+#remedy .boxClm ul li figcaption{
+	padding:10px 0 0;
+	font-size:22px;
+}
+#remedy .boxClm ul li figcaption strong{
+	font-size:48px;
+}
+/* network
+-------------------------------------------------------------*/
+#network{
+	padding:50px 0;
+	background:linear-gradient(to right, #1891e1, #1863da);
+}
+#network h2{
+	padding:0 0 20px;
+	font-size:20px;
+}
+#network p.boxCatch{
+	font-size:22px;
+	margin-bottom: 0px;
+}
+#network p.boxCatch strong{
+	font-size:43px;
+	font-weight:400;
+}
+#network figure{
+	margin:0 -43px;
+}
+#network p:not(.boxCatch){
+	font-size:21px;
+	margin-top: 0px;
+}
+/* explore
+-------------------------------------------------------------*/
+#explore{
+	padding:50px 0;
+}
+#explore h2{
+	margin:0;
+	padding:0;
+	font-size:22px;
+}
+#explore h3{
+	font-size:19px;
+}
+#explore .boxClm ul{
+	display:block;
+}
+#explore .boxClm ul li{
+	width:calc(100%);
+	padding:50px 0 0;
+}
+#explore .boxClm ul li:first-child{
+	width:calc(100%);
+	padding:25px 0 0;
+}
+#explore .boxClm ul li figcaption{
+	padding:15px 0 0;
+}
+#explore .boxClm ul li .txt span{
+	font-size: 24px;
+  line-height: 1.15;
+}
+#explore .boxClm ul li .txt span::before {
+  top: 14px;
+}
+}

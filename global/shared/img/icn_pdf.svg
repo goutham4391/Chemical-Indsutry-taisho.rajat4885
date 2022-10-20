@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 20">
+<style type="text/css">
+	.st0{fill:#0153D6;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M15,20H0V0h9.71L15,5.29V20z M1,19h13V5.71L9.29,1H1V19z"/>
+		<polygon class="st0" points="14.5,6 9,6 9,0.5 10,0.5 10,5 14.5,5 		"/>
+	</g>
+	<path class="st0" d="M3,14H2V8h2.21L5,8.79v2.41L4.21,12H3V14z M3,11h0.79L4,10.79V9.21L3.79,9H3V11z"/>
+	<path class="st0" d="M7.71,14H6V8h1.71L9,9.29v3.41L7.71,14z M7,13h0.29L8,12.29V9.71L7.29,9H7V13z"/>
+	<rect x="10.5" y="11" class="st0" width="2.5" height="1"/>
+	<polygon class="st0" points="11,14 10,14 10,8 13,8 13,9 11,9 	"/>
+</g>
+</svg>

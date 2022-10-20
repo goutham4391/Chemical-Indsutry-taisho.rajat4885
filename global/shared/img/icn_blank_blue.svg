@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2055a5;
+      }
+    </style>
+  </defs>
+  <title>icn_blank_blue</title>
+  <g id="レイヤー_2" data-name="レイヤー 2">
+    <g id="レイヤー_1-2" data-name="レイヤー 1">
+      <g id="icon_別ウィンドウ_a" data-name="icon 別ウィンドウ a">
+        <g id="グループ_1293" data-name="グループ 1293">
+          <g id="長方形_12" data-name="長方形 12">
+            <path class="cls-1" d="M11,14H0V3H11ZM1,13h9V4H1Z"/>
+          </g>
+          <g id="長方形_12-2" data-name="長方形 12-2">
+            <polygon class="cls-1" points="14 11 13 11 13 1 3 1 3 0 14 0 14 11"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

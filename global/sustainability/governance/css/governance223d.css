@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/* テーブル改行 200406 ----------------------- */
+.sp-table-scroll {
+	white-space: normal;
+}
+
+.governance-btn-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.governance-btn-list::after{
+  content:"";
+  display: block;
+  width: 48%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+.governance-btn-list li {
+	width: 48%;
+	margin-bottom: 20px;
+}
+.governance-btn-list .btnDefault2 {
+	max-width: 100%;
+}
+.table-caption-ttl {
+	font-weight: bold;
+	text-align: left;
+	margin-top: 20px;
+}
+/* #コーポレートガバナンス
+----------------------- */
+.corporate_governance .list-num {
+	position: relative;
+	padding-left: 2.5em;
+}
+.corporate_governance .list-num::before {
+	content: "（注）";
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* #リスクマネジメント
+----------------------- */
+#riskManagement figcaption {
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+#riskManagement .boxFig {
+	margin-left: 0;
+}
+#riskManagement .boxFig img {
+	width: 75%;
+}
+
+
+/* #全社行動指針
+----------------------- */
+ol.list-num li p.note{
+	font-size:15px;
+	padding:0 0 0 0.8em;
+	position:relative;
+}
+ol.list-num li p.note span{
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+
+/* #内部統制
+----------------------- */
+h3.numH3-1{
+	padding-left:1.0em;
+	text-indent:-1.0em;
+}
+h3.numH3-2{
+	padding-left:1.2em;
+	text-indent:-1.2em;
+}
+h3.numH3-3{
+	padding-left:1.4em;
+	text-indent:-1.4em;
+}
+h3.numH3-4{
+	padding-left:1.6em;
+	text-indent:-1.6em;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Smartphones
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (max-width:767px){
+	.governance-btn-list::after{
+	  display: none;
+	}
+	.governance-btn-list li {
+		width: 100%;
+	}
+	.governance-btn-list .btnDefault2 {
+		max-width: 100%;
+	}
+
+}
